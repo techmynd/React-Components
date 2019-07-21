@@ -1,0 +1,73 @@
+Common Components and generic structure with Redux
+==================================================
+
+> yarn start / npm start
+Flow
+> yarn run flow / npm run flow
+
+
+- containers > higher order components
+- components > self contained components
+- utils > utilities / pure functions
+
+
+Included Packages
+=================
+- material UI
+- axios
+- bootstrap
+- font-awesome
+- node-sass
+- prop-types
+- react
+- react-dom
+- react-redux
+- react-router-dom (React Router)
+- reactstrap
+- redux
+- Moment
+- uuid
+- dotenv
+- concurrently
+- bcryptjs
+
+- PropTypes
+https://www.npmjs.com/package/prop-types
+https://reactjs.org/docs/typechecking-with-proptypes.html
+
+- Flow
+https://flow.org/en/docs/install/
+adding flow
+Add // @flow to any files you want to type check (for example, to src/App.js).
+https://facebook.github.io/create-react-app/docs/adding-flow
+
+Dev Dependencies
+================
+yarn add <package> --dev
+
+- flow-bin (Flow)
+- redux-devtools
+
+.env
+=====
+require("dotenv/config");
+and use >> process.env.DB_PASS
+
+
+
+"installclient": "npm install",
+"installadmin": "npm install --prefix admin",
+"server": "npm run dev --prefix admin",
+"client": "npm start",
+"dev": "concurrently \"npm run server\" \"npm run client\""
+
+
+"proxy": "http://localhost:5000",
+
+React Snippets
+==============
+https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+https://vasanthk.gitbooks.io/react-bits/
+
+https://camjackson.net/post/9-things-every-reactjs-beginner-should-know
