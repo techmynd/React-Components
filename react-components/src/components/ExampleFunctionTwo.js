@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { Fragment } from 'react';
+//import React, { useState, useEffect, Fragment } from 'react';
+// import PropTypes from 'prop-types';
 
-const constName = props => {
+type Props = {
+  // props types
+};
+
+const constName = (props: Props) => {
   // event handler
   function handleClick(e) {
     e.preventDefault();
@@ -9,15 +14,15 @@ const constName = props => {
   }
 
   return (
-    <div className=''>
+    <Fragment>
       <div className='' onClick={handleClick}>
         Functional Component Two
       </div>
-    </div>
+    </Fragment>
   );
 };
 
-constName.propTypes = {};
+//constName.propTypes = {};
 export default constName;
 
 /** 

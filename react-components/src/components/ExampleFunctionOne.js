@@ -1,22 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { Fragment } from 'react';
+// import React, { useState, useEffect, Fragment } from 'react';
+// import PropTypes from 'prop-types';
 
-function FunctionName(props) {
+type Props = {
+  // props types
+};
+
+function FunctionName(props: Props) {
   // event handler
   function handleClick(e) {
     e.preventDefault();
     console.log('Clicked One');
   }
   return (
-    <div className=''>
+    <Fragment>
       <div className='' onClick={handleClick}>
         Functional Component One
       </div>
-    </div>
+    </Fragment>
   );
 }
 
-FunctionName.propTypes = {};
+//FunctionName.propTypes = {};
 export default FunctionName;
 
 /** 

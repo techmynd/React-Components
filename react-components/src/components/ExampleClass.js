@@ -1,8 +1,17 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component, Fragment } from 'react';
+// import PropTypes from 'prop-types';
 
-class ExampleClass extends Component {
-  constructor(props) {
+type Props = {
+  // in case > props.title // check it like below
+  // title: string
+  // isEnabled: boolean,
+  //  prevState: any,
+  //  prevProps: any,
+};
+type State = { counter: number };
+
+class ExampleClass extends Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = {
       counter: 1,
@@ -12,7 +21,7 @@ class ExampleClass extends Component {
   }
 
   componentDidMount() {}
-  componentDidUpdate(prevProps, prevState) {}
+  //componentDidUpdate(prevProps: Props, prevState: Props) {}
   componentWillUnmount() {}
 
   /*
@@ -40,16 +49,16 @@ class ExampleClass extends Component {
     }
     */
     return (
-      <div className=''>
+      <Fragment>
         <div className=''>
           Class Component Example / counter: {this.state.counter}
         </div>
-      </div>
+      </Fragment>
     );
   }
 }
 
-ExampleClass.propTypes = {};
+//ExampleClass.propTypes = {};
 export default ExampleClass;
 
 /** 
